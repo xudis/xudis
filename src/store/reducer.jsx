@@ -24,6 +24,7 @@ export default (state = defaultState, action) => {
         //对state进行深拷贝
         const newState = JSON.parse(JSON.stringify(state))
         newState.list[action.index].text = action.value
+
         return newState
     }
 
